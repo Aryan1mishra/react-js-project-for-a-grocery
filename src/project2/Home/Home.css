@@ -1,0 +1,107 @@
+@keyframes typing {
+  0.0000%,
+  27.3488% {
+    content: "";
+  }
+  1.1395%,
+  26.2093% {
+    content: "D";
+  }
+  2.2791%,
+  25.0698% {
+    content: "D2";
+  }
+  3.4186%,
+  23.9302% {
+    content: "D2C";
+  }
+
+  30.7674%,
+  51.2791% {
+    content: "";
+  }
+  31.9070%,
+  50.1395% {
+    content: "D";
+  }
+  33.0465%,
+  49.0000% {
+    content: "D2";
+  }
+  34.1860%,
+  47.8605% {
+    content: "D2B";
+  }
+
+  54.6977%,
+  75.2093% {
+    content: "";
+  }
+  55.8372%,
+  74.0698% {
+    content: "D";
+  }
+  56.9767%,
+  72.9302% {
+    content: "DO";
+  }
+  58.1163%,
+  71.7907% {
+    content: "DOO";
+  }
+  59.2558%,
+  70.6512% {
+    content: "DOOR";
+  }
+
+  78.6279%,
+  96.8605% {
+    content: "";
+  }
+  79.7674%,
+  95.7209% {
+    content: "N";
+  }
+  80.9070%,
+  94.5814% {
+    content: "NG";
+  }
+  82.0465%,
+  93.4419% {
+    content: "NGO";
+  }
+  83.1860%,
+  92.3023% {
+    content: "NGO'";
+  }
+  84.3256%,
+  91.1628% {
+    content: "NGO's";
+  }
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+.typewriter {
+  color: rgb(239 68 68);
+  text-decoration: underline;
+}
+#home {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInEntrance 2s ease-in-out forwards;
+}
+@keyframes slideInEntrance {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

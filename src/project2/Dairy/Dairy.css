@@ -1,0 +1,11 @@
+#dairy {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInEntrance 2s ease-in-out forwards;
+}
+@keyframes slideInEntrance {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

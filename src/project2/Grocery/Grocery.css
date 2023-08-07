@@ -1,0 +1,11 @@
+#grocery {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideInEntrance 2s ease-in-out forwards;
+}
+@keyframes slideInEntrance {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

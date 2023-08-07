@@ -1,0 +1,38 @@
+.list{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transform: rotateY(11px);
+    transition: transform o.5s ease;
+}
+.list span {
+    font-size: 10px;
+}
+ul:hover .list{
+    transform: translateY(-15px);
+
+
+}
+ul i {
+    opacity: 1;
+    transition: opacity 1 ease;
+}
+ul span {
+    opacity: 0;
+    transition: opacity 1 ease;
+}
+ul:hover span{
+    opacity: 1;
+    cursor: pointer;
+}
+ul:hover i{
+    opacity: 0.5;
+}
+#nav{
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
